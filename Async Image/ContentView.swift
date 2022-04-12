@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let imageURL: String = "https://credo.academy/credo-academy@3x.png"
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+//        Basic image view
+//       AsyncImage(url: URL(string: imageURL))
+        
+//     Scaling images
+        AsyncImage(url: URL(string: imageURL), scale: 3.0)
+        
     }
 }
 
